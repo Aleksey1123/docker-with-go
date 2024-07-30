@@ -1,0 +1,11 @@
+[build]
+  cmd = "go build -o app-bin ."
+  bin = "app-bin"
+  dir = "."
+  include_ext = ["go"]
+  exclude_dir = ["vendor"]
+  run_after_build = "chmod +x app-bin"
+  poll = true
+
+[log]
+  level = "debug"
